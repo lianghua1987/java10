@@ -4,6 +4,8 @@ package com.hua.java;
 import com.hua.bean.Person;
 import org.junit.Test;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.logging.Logger;
 
 public class ModuleTest {
@@ -22,5 +24,16 @@ public class ModuleTest {
     @Test
     public void test(){
         System.out.println("Hello Hua");
+    }
+
+
+    @Test
+    public void test1(){
+        try {
+            URL url = new URL("http://www.google.com");
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
+
     }
 }
